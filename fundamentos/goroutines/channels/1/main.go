@@ -1,14 +1,23 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
-	msg := make(chan string)
+	channel := make(chan int)
 
 	go func() {
-		msg <- "Hello World"
+		for i := 0; i < 10; i++ {
+			channel <- i
+		}
 	}()
 
-	result := <-msg
-	fmt.Println(result)
+	go func() {
+		for {
+			fmt.Println(<-channel)
+		}
+	}()
+	time.Sleep(time.Second)
 }
