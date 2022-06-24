@@ -31,7 +31,7 @@ func funcInsideFunc() func() int {
 }
 
 func main() {
-	//x := funcName(5)
+	//x := funcName(fun_in)
 	fmt.Println(funcName(10))
 	fmt.Println(nameReturn("Daniel"))
 	x, y := moreReturn("Daniel", "Agostinho")

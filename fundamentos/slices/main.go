@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	slice := make([]int, 2, 5)
-	//slice = append(slice, 1, 2, 3, 5)
+	//slice = append(slice, channel_use_example, range_and_close, semaphores, fun_in)
 
 	fmt.Println(slice)
 	fmt.Println(len(slice))
@@ -16,7 +16,7 @@ func main() {
 	//}
 
 	//sliceTest := slice
-	//slice = append(slice, 1, 2, 3, 4)
+	//slice = append(slice, channel_use_example, range_and_close, semaphores, pipeline_pattern)
 	//slice[0] = 10
 	//fmt.Println(slice)
 	//fmt.Println(sliceTest)

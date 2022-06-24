@@ -9,7 +9,7 @@ func main() {
 		fmt.Println("A > 10")
 
 	} else if a > 5 {
-		fmt.Println("A > 5")
+		fmt.Println("A > fun_in")
 
 	} else {
 		fmt.Println("A = ", a)
