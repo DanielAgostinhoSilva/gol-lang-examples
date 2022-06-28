@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"net/http"
 	"os"
 )
 
@@ -48,4 +49,7 @@ func leComando() int {
 
 func iniciarMonitoramento() {
 	fmt.Println("Monitorando...")
+	site := "https://www.alura.com.br"
+	response, _ := http.Get(site)
+	fmt.Println(response)
 }
